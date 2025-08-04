@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+}
+.game {
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 400px;
+    margin: 40px auto;
+    height: 100vh;
+    overflow: hidden;
+    border-left: 4px dashed white;
+    border-right: 4px dashed white;
+}
+.hide {
+    display: none;
+}
+.startScreen {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(43, 205, 226);
+    border-bottom: 2px solid rgb(132, 197, 197);
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+    color: #212121;
+}
+.score,
+.highscore {
+    position: absolute;
+    left: 20px;
+    width: 200px;
+    background-color: rgb(100, 224, 156);
+    color: rgb(59, 40, 40);
+    line-height: 40px;
+    border-radius: 4px;
+    font-size: 1.2em;
+    text-align: center;
+    user-select: none;
+    font-weight: bold;
+}
+.score {
+    top: 10px;
+}
+.highscore {
+    top: 60px;
+}
+.ClickToStart {
+    cursor: pointer;
+    font-weight: bold;
+}
+.gameArea {
+    height: 100vh;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    overflow: hidden;
+}
+.car {
+    background: url(car.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 75px;
+    width: 50px;
+    position: absolute;
+    top: 520px;
+}
+.Opponents {
+    background: url(opponentcar.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 75px;
+    width: 50px;
+    position: absolute;
+}
+.roadLines {
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    left: 195px;
+}
